@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/mailService.php';
 
 use Dotenv\Dotenv;
 
@@ -36,7 +37,7 @@ if (
 }
 
 // Send email
-$response = MailService::send(
+$response = mailService::send(
     $data['to'],
     $data['subject'],
     $data['message']

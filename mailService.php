@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
-class MailService {
+class mailService {
 
     public static function send($to, $subject, $html) {
         $mail = new PHPMailer(true);

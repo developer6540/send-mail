@@ -11,13 +11,12 @@ class mailService {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->setFrom('info@groupfour.com', 'GroupFour Library');
-            $mail->Username   = $_ENV['GMAIL_USER'];
-            $mail->Password   = $_ENV['GMAIL_APP_PASS'];
+            $mail->Username   = 'developer6540@gmail.com';
+            $mail->Password   = 'gyrgijahiuxvgnwi';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
-            $mail->setFrom($_ENV['GMAIL_USER'], 'GroupFour Library');
+            $mail->setFrom('developer6540@gmail.com', 'GroupFour Library');
             $mail->addAddress($to);
 
             $mail->isHTML(true);

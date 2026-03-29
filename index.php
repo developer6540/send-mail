@@ -3,12 +3,6 @@
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/mailService.php';
 
-use Dotenv\Dotenv;
-
-// Load env
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
 // Headers (API)
 header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");

@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 use Dotenv\Dotenv;
 
 // Load env
-$dotenv = Dotenv::createImmutable(__DIR__ . '/send-mail/');
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 // Headers (API)

@@ -11,6 +11,7 @@ class mailService {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
+            $mail->setFrom('info@groupfour.com', 'GroupFour Library');
             $mail->Username   = $_ENV['GMAIL_USER'];
             $mail->Password   = $_ENV['GMAIL_APP_PASS'];
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
